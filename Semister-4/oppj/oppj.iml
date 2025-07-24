@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Abstraction" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ErrorHandling" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/FileHandling" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GUI" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Interface" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MultiThreading" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lab 7" isTestSource="false" />
@@ -16,6 +17,7 @@
       <sourceFolder url="file://$MODULE_DIR$/lab5" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lab6" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lab9" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sec" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
