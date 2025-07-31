@@ -1,0 +1,3 @@
+GCD of 8 and 12 is 4
+GCD of 20 and 45 is 5
+GCD of 30 and 80 is 10
