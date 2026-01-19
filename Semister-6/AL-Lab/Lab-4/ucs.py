@@ -1,5 +1,14 @@
 import heapq
 
+
+graph = {
+    'A': [('B', 1), ('C', 4)],
+    'B': [('D', 2), ('E', 5)],
+    'C': [('E', 1)],
+    'D': [],
+    'E': []
+}
+
 def uniform_cost_search(graph, start, goal):
     priority_queue = [(0, start, [])]  # (cost, node, path)
     visited = set()
@@ -10,14 +19,21 @@ def uniform_cost_search(graph, start, goal):
         if node in visited:
             continue
 
-        visited.add(node)
         path = path + [node]
+        visited.add(node)
 
         if node == goal:
             return path, cost
 
-        for neighbor, weight in graph[node]:
+        for neighbor, edge_cost in graph[node]:
             if neighbor not in visited:
-                heapq.heappush(priority_queue, (cost + weight, neighbor, path))
+                heapq.heappush(
+                    priority_queue,
+                    (cost + edge_cost, neighbor, path)
+                )
 
     return None, float('inf')
+
+path, cost = uniform_cost_search(graph, 'A', 'E')
+print("Optimal Path:", path)
+print("Total Cost:", cost)
